@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f92c7;
+}
+
+.login {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.login-titulo {
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.contenedor-login {
+    display: flex;
+    width: 400px;
+    height: 500px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    color: #1f92c7;
+    gap: 2rem;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0 8px 32px 0 #4dc2f8;
+}
+
+.contenedor-login h5 {
+    letter-spacing: 0.25em;
+    text-align: center;
+}
+
+.cambiar-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-input {
+    display: flex;
+    gap: 0.65rem;
+    flex-direction: column;
+}
+
+.contenedor-input input {
+    padding: 7px 11px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.button-sign-in {
+    padding: 0.75em;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #6fd2ff;
+    box-shadow: 0 4px 1px 0 #000000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.password-olvidar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password-olvidar a {
+    color: rgb(20, 110, 190);
+}
+
+.recordar-password input[type="checkbox"] {
+    display: none;
+}
+
+.recordar-password label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.recordar-password label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding: 8px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.recordar-password input[type="checkbox"]:checked + label:before {
+    background-color: #383838; 
+}
+
+.recordar-password label:after {
+    content: '\2713';
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-size: 13px;
+    color: #fff;
+    display: none;
+}
+
+.recordar-password input[type="checkbox"]:checked + label:after {
+    display: block; /* Mostrar el símbolo de check cuando el checkbox está seleccionado */
+}
